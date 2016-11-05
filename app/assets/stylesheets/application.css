@@ -12,4 +12,26 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
+
+body {
+  background-color: #2D9CDB;
+}
+
+.jumbotron p {
+  color: #E0E0E0;
+}
+
+.jumbotron {
+  background-color:  #2D9CDB;
+}
+
+.fa-check-circle-o {
+  color: #EB5757;
+}
+
+.navbar-default {
+  background-color:  #2D9CDB;
+  border: none;
+}
