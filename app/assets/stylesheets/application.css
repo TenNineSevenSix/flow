@@ -35,3 +35,15 @@ body {
   background-color:  #2D9CDB;
   border: none;
 }
+
+/*.devise-css h3 {
+  color: #fff;
+}*/
+
+.devise-css p {
+  color: #fff;
+}
+
+.devise-css p a {
+  color: #333;
+}
