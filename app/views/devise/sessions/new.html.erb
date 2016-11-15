@@ -1,5 +1,9 @@
+<div class="jumbotron">
+
+  <h1>Focus on being your best with Flow Health & Fitness Experts Near You.</h1>
+</div>
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-signin"} ) do |f| %>
-    <h2 class="text-center">Log in</h2>
+    <h2 class="text-center">Login or Sign up</h2>
     <%= f.input :email, required: false, label: false, autofocus: true, placeholder: "Email"  %>
     <%= f.input :password, required: false, label: false, placeholder: "Password" %>
     <%= f.button :submit, "Log in", class: 'btn btn-danger btn-block' %>

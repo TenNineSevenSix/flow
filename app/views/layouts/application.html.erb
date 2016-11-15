@@ -17,7 +17,7 @@
 <!-- compatibility-->
 <meta name="viewport" content="width=depth-width, initial-scale=1.0, maximum-scale=1">
 <meta http-equiv="X-UA-compatible" content="ie=edge">
-<title>Stukdo · Productivity </title>
+<title>Flow · Focus on Being Your Best</title>
 <!-- Bootstrap then local css file references-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
 <link rel="stylesheet" href="css/main.css">
@@ -37,10 +37,17 @@
 
   <body>
     <%= render 'layouts/header' %>
+    <div class="space">
+
+    </div>
     <div class="container">
-      <%= yield %>
+      <div class="xs-col-4">
+        <div class="signup xs-col-4 text-center">
+            <%= yield %>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
+        </div>
+      </div>
     </div>
 
   </body>

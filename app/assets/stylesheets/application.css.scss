@@ -15,16 +15,72 @@
  *= require font-awesome
  */
 
-body {
-  background-color: #2D9CDB;
+ .icon-bar {
+color: #F6003C
 }
 
-.jumbotron p {
-  color: #E0E0E0;
+.btn-danger {
+background: #F6003C
+
 }
 
 .jumbotron {
-  background-color:  #2D9CDB;
+  background-color: transparent;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 50px;
+}
+
+.jumbotron h1 {
+  color: #DDFFE3;
+  font-size: 30px;
+
+}
+
+.text-center h2 {
+  color: #343A35;
+  font-size: 20px;
+  margin-top: 0px;
+
+}
+
+.navbar-default .navbar-nav>li>a {
+color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+border-color: #EB5757;
+// border: none;
+
+}
+
+body {
+  background: image-url("yogapose.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin: 0px;
+  border-radius: 0;
+  background-repeat: no-repeat;
+
+}
+
+.signup a {
+color: #E9004B;
+}
+
+.navbar-default {
+  margin-bottom: 0px;
+
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  color: #E9004B;
+
 }
 
 .fa-check-circle-o {
@@ -32,13 +88,11 @@ body {
 }
 
 .navbar-default {
-  background-color:  #2D9CDB;
+  background-color: #1C304B;
   border: none;
-}
-
-/*.devise-css h3 {
+  border-radius: 0px;
   color: #fff;
-}*/
+}
 
 .devise-css p {
   color: #fff;
