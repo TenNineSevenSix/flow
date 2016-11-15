@@ -12,6 +12,8 @@ gem 'jbuilder',                     '~> 2.5'
 gem 'rename'
 gem 'heroku'
 gem 'pg'
+gem 'rails_12factor'
+
 
 
 group :development, :test do
