@@ -16,26 +16,33 @@
  */
 
  .icon-bar {
-color: #F6003C
+   color: #F6003C
 }
 
 .btn-danger {
-background: #F6003C
-
+  background: #F6003C
 }
 
 .jumbotron {
   background-color: transparent;
-  margin-bottom: 0px;
   padding-bottom: 0px;
-  padding-top: 50px;
+  padding-top: 30px;
+  margin: auto;
 }
 
 .jumbotron h1 {
   color: #DDFFE3;
-  font-size: 30px;
+  font-size: 32px;
 
 }
+
+.jumbotron h3 {
+  color: #DDFFE3;
+  font-size: 25px;
+
+}
+
+
 
 .text-center h2 {
   color: #343A35;
