@@ -19,8 +19,28 @@
    color: #F6003C
 }
 
+.btn-danger.facebook {
+  background: #3b5998;
+  border: none;
+  border-radius: 3px;
+  margin: auto;
+  width: 300px;
+
+}
+.btn-danger.facebook a {
+
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.fa {
+float: left;
+padding-top: 4px;
+}
+
 .btn-danger {
-  background: #F6003C
+  background: #F6003C;
 }
 
 .jumbotron {
