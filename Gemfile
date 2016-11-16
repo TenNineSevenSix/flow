@@ -11,6 +11,8 @@ gem 'turbolinks',                   '~> 5'
 gem 'jbuilder',                     '~> 2.5'
 gem 'rename'
 gem 'heroku'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'byebug', platform: :mri
