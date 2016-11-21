@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
-has_one :personal
-
+# has_one :personal
+has_one :profile
+has_one :business
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,

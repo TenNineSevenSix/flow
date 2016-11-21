@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @business.bio %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @business.user.profile.first_name %>
+</p>
+
+
+<p>
+  <strong>Last name:</strong>
+  <%= @business.user.profile.last_name %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= @business.user.profile.avatar %>
+</p>
+
+
+
+<p>
+  <strong>Profile user:</strong>
+  <%= @business.user.profile.bio %>
+</p>
+
+<% if @business.services.any? %>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Service Name</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @business.services.each do |service|  %>
+      <tr>
+        <td><%= service.activity.name %></td>
+        <td><%= service.description %></td>
+        <td><%= service.price %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+<%= link_to 'Add a service', new_service_path %> |
+<%= link_to 'Edit', edit_business_path(@business) %> |
+<%= link_to 'Back', businesses_path %>

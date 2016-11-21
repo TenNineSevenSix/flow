@@ -10,16 +10,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161116102948) do
+ActiveRecord::Schema.define(version: 20161121051157) do
+
+  create_table "activities", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "businesses", force: :cascade do |t|
+    t.text     "bio"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_businesses_on_user_id"
+  end
 
   create_table "profiles", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
+    t.text     "bio"
+    t.string   "avatar"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id"
+  end
+
+  create_table "service_types", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.integer  "service_type_id"
     t.text     "description"
-    t.integer  "photo"
-    t.boolean  "host",        default: false
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.float    "price"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "business_id"
+    t.integer  "activity_id"
+    t.index ["activity_id"], name: "index_services_on_activity_id"
+    t.index ["business_id"], name: "index_services_on_business_id"
+    t.index ["service_type_id"], name: "index_services_on_service_type_id"
   end
 
   create_table "users", force: :cascade do |t|
