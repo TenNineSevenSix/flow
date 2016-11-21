@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :services
+  resources :businesses
+  resources :service_types
+  resources :profiles
   root 'pages#home'
   get 'about' => 'pages#about'
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
