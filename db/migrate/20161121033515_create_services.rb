@@ -3,7 +3,7 @@ class CreateServices < ActiveRecord::Migration[5.0]
     create_table :services do |t|
       t.text :description
       t.float :price
-      t.rereferences :service_type
+      t.references :service_type
 
       t.timestamps
     end

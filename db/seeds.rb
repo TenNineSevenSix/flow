@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+service_type = ServiceType.create([
+{name: 'Yoga'},
+{name: 'Pilates'},
+{name: 'Personal Training'},
+{name: 'Massage'}
+])
