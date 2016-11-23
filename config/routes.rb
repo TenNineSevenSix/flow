@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :users, only: :show
+  resources :activities
   resources :services
   resources :businesses
   resources :service_types
