@@ -1,0 +1,14 @@
+<h2>Search</h2>
+
+<%= simple_form_for(:services, url: services_path, method: :get) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :service_type_id, collection: ServiceType.all, class: "form-control", include_blank: false, selected: 1%>
+    
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Search" %>
+  </div>
+<% end %>

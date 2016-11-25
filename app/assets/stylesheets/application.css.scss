@@ -15,8 +15,15 @@
  *= require font-awesome
  */
 
+.crud {
+  color: #fff;
+}
 
- .icon-bar {
+.table-responsive {
+display: inline-table;
+}
+
+.icon-bar {
    color: #F6003C
 }
 
@@ -32,6 +39,11 @@
 
   color: #fff;
   text-decoration: none;
+
+}
+
+.navbar-brand {
+ font-size: 25px;
 
 }
 
@@ -54,22 +66,18 @@ padding-top: 4px;
 .jumbotron h1 {
   color: #DDFFE3;
   font-size: 32px;
-
 }
 
 .jumbotron h3 {
   color: #DDFFE3;
   font-size: 25px;
-
 }
-
 
 
 .text-center h2 {
   color: #343A35;
   font-size: 20px;
   margin-top: 0px;
-
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -94,7 +102,8 @@ body {
 }
 
 .signup a {
-color: #E9004B;
+color: #fff;
+font-size: 15px;
 }
 
 .navbar-default {

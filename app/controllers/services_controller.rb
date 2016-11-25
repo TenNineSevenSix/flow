@@ -4,12 +4,19 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.json
   def index
-    @services = Service.all
+
+    if params[:services]
+      puts params.inspect
+      @services = Service.where(service_type_id: params[:services][:service_type_id]) #.search([:services][:service_type_id].to_i).order("created_at DESC")
+    else
+      @services = Service.all
+    end
   end
 
   # GET /services/1
   # GET /services/1.json
   def show
+    puts @service.inspect
   end
 
   # GET /services/new
@@ -25,6 +32,7 @@ class ServicesController < ApplicationController
   # POST /services.json
   def create
     @service = Service.new(service_params)
+    @service.business_id = current_user.business.id
 
     respond_to do |format|
       if @service.save
@@ -69,6 +77,6 @@ class ServicesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def service_params
-      params.require(:service).permit(:description, :price, :service_type)
+      params.require(:service).permit(:description, :price, :service_type_id)
     end
 end

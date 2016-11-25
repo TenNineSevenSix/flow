@@ -7,8 +7,9 @@
 
 <p>
   <strong>User:</strong>
-  <%= @business.user %>
+  <%= @business.user.profile.first_name %>
 </p>
 
+<%= link_to 'Add a service', new_service_path %> |
 <%= link_to 'Edit', edit_business_path(@business) %> |
 <%= link_to 'Back', businesses_path %>

@@ -1,17 +1,15 @@
 <div class="jumbotron xs-col-12">
 
-  <h1 class="hidden-md-down">Focus on being your best with Flow Health & Fitness Experts Near You.</h1>
-  <h3 class="hidden-lg-up">Focus on being your best with Flow Health & Fitness Experts Near You.</h1>
+  <h1 class="hidden-md-down">Let's Get Flow Fit!</h1>
+  <h3 class="hidden-lg-up">Let's Get Flow Fit!</h1>
 
 </div>
 
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-signin"} ) do |f| %>
-    <h3 class="text-center hidden-md-down">Login or Sign up</h2>
-    <h4 class="text-center hidden-md-up">Login or Sign up</h2>
     <%= f.input :email, required: false, label: false, autofocus: true, placeholder: "Email"  %>
     <%= f.input :password, required: false, label: false, placeholder: "Password" %>
-    <%= f.button :submit, "Log in", class: 'btn btn-danger btn-block' %>
+    <%= f.button :submit, "Get Flow Fit!", class: 'btn btn-danger btn-block' %>
   <!-- </div> -->
 <% end %>
 

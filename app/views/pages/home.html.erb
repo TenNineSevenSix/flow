@@ -1,7 +1,7 @@
 <div class="jumbotron">
-<h1><i class="fa fa-check-circle-o" aria-hidden="true"></i> Flow</h1>
-  <p>Welcome to #</p>
-  <% if current_user %>
+  <% if user_signed_in? %>
+  <h1>Welcome <%= current_user.profile.first_name %>. Choose your Flow Health and Fitness services below.</h1>
+  <%= render 'layouts/search' %>
   <% else %>
   <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-danger btn-md" %>
 

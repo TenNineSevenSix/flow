@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  resources :activities
   resources :services
   resources :businesses
-  # resources :service_types
+  resources :service_types
   resources :profiles
   root 'pages#home'
   get 'about' => 'pages#about'
